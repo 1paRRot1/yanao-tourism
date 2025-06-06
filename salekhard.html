@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салехард - Путеводитель по ЯНАО</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта должна быть на всех страницах -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"> <!-- Ссылка ведет на главную -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 20V14C8 12.3431 9.34315 11 11 11H13C14.6569 11 16 12.3431 16 14V20" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/><path d="M11 11V8C11 5.79086 9.20914 4 7 4" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/><path d="M13 11V8C13 5.79086 14.7909 4 17 4" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/><path d="M7 4C5.34315 4 4 5.34315 4 7V9" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/><path d="M17 4C18.6569 4 20 5.34315 20 7V9" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Путеводитель по ЯНАО</span>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html#map">Карта</a> <!-- Ссылки ведут на главную -->
+                <a href="index.html#gallery">Галерея</a>
+                <a href="#" class="account-btn" id="open-modal-btn">Создать аккаунт</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="destination-page">
+            <div class="container">
+                
+                <!-- ИЗМЕНИТЕ ЭТОТ КОНТЕНТ ДЛЯ КАЖДОЙ СТРАНИЦЫ -->
+                <h1>Салехард</h1>
+                <img src="image/29.png" alt="Салехард" class="destination-image">
+                <article>
+                    <p>Салехард — административный центр Ямало-Ненецкого автономного округа и единственный в мире город, расположенный непосредственно на Полярном круге. Его название переводится с ненецкого как «поселение на мысу».</p>
+                    <p>Город был основан в 1595 году как казачья крепость Обдорск. Сегодня это современный арктический город с развитой инфраструктурой, который бережно хранит свою историю и культуру коренных народов Севера.</p>
+                    <h3>Что посмотреть:</h3>
+                    <ul>
+                        <li><strong>Стела «66-я параллель»</strong> — символ Полярного круга, обязательное место для фото.</li>
+                        <li><strong>Обдорский острог</strong> — историко-архитектурный комплекс, реконструкция первой русской крепости в этих землях.</li>
+                        <li><strong>Ямало-ненецкий окружной музейно-выставочный комплекс имени И. С. Шемановского</strong> — один из старейших музеев Сибири, где можно увидеть знаменитого мамонтенка Любу.</li>
+                        <li><strong>Храм Петра и Павла</strong> — одно из красивейших зданий города с уникальной архитектурой.</li>
+                    </ul>
+                </article>
+<div class="destination-nav">
+                    <a href="#" class="nav-link disabled">← Предыдущее</a>
+                    <a href="http://127.0.0.1:55354/index.html" class="back-btn">К карте</a>
+                    <a href="polyarny-ural.html" class="nav-link">Следующее →</a>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал и скрипты должны быть на всех страницах -->
+    <footer class="site-footer"><!-- ... --></footer>
+    <div id="modal-container" class="modal-container"><!-- ... --></div>
+    <script>
+        // Скрипт для модального окна должен быть на всех страницах, т.к. кнопка есть в шапке
+        const modalContainer = document.getElementById('modal-container');
+        const openModalBtn = document.getElementById('open-modal-btn');
+        const closeBtn = document.querySelector('.close-btn');
+        openModalBtn.addEventListener('click', (event) => { event.preventDefault(); modalContainer.style.display = 'flex'; });
+        closeBtn.addEventListener('click', () => { modalContainer.style.display = 'none'; });
+        window.addEventListener('click', (event) => { if (event.target === modalContainer) { modalContainer.style.display = 'none'; } });
+        document.getElementById('register-form').addEventListener('submit', (event) => { event.preventDefault(); alert('Спасибо за регистрацию! (Это демонстрация, данные не сохранены)'); modalContainer.style.display = 'none'; });
+    </script>
+    
+</body>
+</html>
