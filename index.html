@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Экологические маршруты ЯНАО</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка сайта с навигацией (неподвижная) -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <!-- SVG Орнамент "Рога оленя" -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 20V14C8 12.3431 9.34315 11 11 11H13C14.6569 11 16 12.3431 16 14V20" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M11 11V8C11 5.79086 9.20914 4 7 4" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M13 11V8C13 5.79086 14.7909 4 17 4" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M7 4C5.34315 4 4 5.34315 4 7V9" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M17 4C18.6569 4 20 5.34315 20 7V9" stroke="#007BFF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>Путеводитель по ЯНАО</span>
+            </a>
+            <nav class="main-nav">
+                <a href="#map">Карта</a>
+                <a href="#gallery">Галерея</a>
+                <a href="#" class="account-btn" id="open-modal-btn">Создать аккаунт</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция с картой -->
+        <section id="map" class="map-section">
+            <div class="container">
+                <h2>Интерактивная карта достопримечательностей</h2>
+                <div class="map-container">
+                    <img src="image/15.png" alt="Карта ЯНАО" class="map-image">
+
+                    <!-- ИЗМЕНЕНИЕ: Добавлены новые и обновлены старые маркеры -->
+                    <!-- Точка 1: Салехард -->
+<a href="salekhard.html" class="map-point" style="top: 65%; left: 18%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Салехард</h3><p>Столица ЯНАО, город на Полярном круге.</p></div>
+                    </a>
+                    <!-- Точка 2: Полярный Урал -->
+                    <a href="polyarny-ural.html" class="map-point" style="top: 35%; left: 15%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Полярный Урал</h3><p>Горный массив с уникальными ландшафтами.</p></div>
+                    </a>
+                    <!-- Точка 3: Горнокнязевск -->
+                    <a href="gornoknyazevsk.html" class="map-point" style="top: 66%; left: 22%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Горнокнязевск</h3><p>Природно-этнографический комплекс.</p></div>
+                    </a>
+                    <a href="novy-urengoy.html" class="map-point" style="top: 50%; left: 60%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Новый Уренгой</h3><p>Неофициальная "газовая столица" России.</p></div>
+                    </a>
+                    <a href="gydanskiy.html" class="map-point" style="top: 15%; left: 65%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Заповедник "Гыданский"</h3><p>Арктическая пустыня и тундра.</p></div>
+                    </a>
+                    <a href="nadym.html" class="map-point" style="top: 70%; left: 45%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Надым</h3><p>Центр проведения Дня оленевода.</p></div>
+                    </a>
+                    <a href="bolshoe-shuchye.html" class="map-point" style="top: 55%; left: 10%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Озеро Большое Щучье</h3><p>Самое глубокое озеро Уральских гор.</p></div>
+                    </a>
+                    <a href="mangazeya.html" class="map-point" style="top: 45%; left: 78%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>Городище Мангазея</h3><p>Легендарный город-форпост XVII века.</p></div>
+                    </a>
+                    <a href="dead-road.html" class="map-point" style="top: 68%; left: 35%;">
+                        <div class="marker"></div>
+                        <div class="popup"><h3>"Мёртвая дорога"</h3><p>Участок недостроенной Трансполярной магистрали.</p></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Разделитель с орнаментом (код без изменений) -->
+        <div class="ornament-divider"></div>
+
+        <!-- Секция с фотогалереей (код без изменений) -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>Фотогалерея Ямала</h2>
+                <div class="gallery-grid">
+                    <a href="image/16.jpg" class="gallery-link"><div class="gallery-item"><img src="https://placehold.co/400x300/007BFF/FFFFFF?text=Северное+сияние" alt="Северное сияние"></div></a>
+                    <a href="image/19.jpg" class="gallery-link"><div class="gallery-item"><img src="https://placehold.co/400x300/0A2240/FFFFFF?text=Оленья+упряжка" alt="Оленья упряжка"></div></a>
+                    <a href="image/20.jpg" class="gallery-link"><div class="gallery-item"><img src="https://placehold.co/400x300/D93636/FFFFFF?text=Полярный+Урал" alt="Полярный Урал"></div></a>
+                    <a href="image/25.jpg" class="gallery-link"><div class="gallery-item"><img src="https://placehold.co/400x300/F0F0F0/333333?text=Быт+кочевников" alt="Быт кочевников"></div></a>
+                    <a href="image/26.jpg" class="gallery-link"><div class="gallery-item"><img src="https://placehold.co/400x300/007BFF/FFFFFF?text=Обдорский+острог" alt="Обдорский острог"></div></a>
+                    <a href="image/27.jpg" class="gallery-link"><div class="gallery-item"><img src="https://placehold.co/400x300/0A2240/FFFFFF?text=Ледоход+на+Оби" alt="Ледоход на Оби"></div></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Обновленный подвал сайта -->
+<footer class="site-footer">
+    <div class="container">
+        <p>© 2025 Путеводитель по ЯНАО. Создано с любовью к Северу.♡♡♡</p>
+        <div class="footer-socials">
+            <!-- ЗАМЕНИТЕ "your-username" НА ВАШ ЛОГИН НА GITHUB -->
+            <a href="https://github.com/1paRRot1" target="_blank" title="Проект на GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+    <!-- Модальное окно для регистрации (код без изменений) -->
+    <div id="modal-container" class="modal-container">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h2>Аккаунт</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="email">Ваш Email</label>
+                    <input type="email" id="email" name="email" placeholder="например, user@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="минимум 8 символов" required>
+                </div>
+                 <div class="form-group">
+                    <label for="password-confirm">Подтвердите пароль</label>
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="повторите пароль" required>
+                </div>
+                <button type="submit" class="submit-btn">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Лайтбокс для просмотра изображений (код без изменений) -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">×</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+
+    <!-- JavaScript для управления интерактивом (код без изменений) -->
+    <script>
+        // Код для модального окна регистрации
+        const modalContainer = document.getElementById('modal-container');
+        const openModalBtn = document.getElementById('open-modal-btn');
+        const closeBtn = document.querySelector('.close-btn');
+        openModalBtn.addEventListener('click', (event) => { event.preventDefault(); modalContainer.style.display = 'flex'; });
+        closeBtn.addEventListener('click', () => { modalContainer.style.display = 'none'; });
+        window.addEventListener('click', (event) => { if (event.target === modalContainer) { modalContainer.style.display = 'none'; } });
+        document.getElementById('register-form').addEventListener('submit', (event) => { event.preventDefault(); alert('Спасибо за регистрацию! (Это демонстрация, данные не сохранены)'); modalContainer.style.display = 'none'; });
+
+        // Код для лайтбокса галереи
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const galleryLinks = document.querySelectorAll('.gallery-link');
+        const lightboxCloseBtn = document.querySelector('.lightbox-close');
+        galleryLinks.forEach(link => { link.addEventListener('click', e => { e.preventDefault(); const imageUrl = link.getAttribute('href'); lightboxImage.setAttribute('src', imageUrl); lightbox.style.display = 'flex'; }); });
+        const closeLightbox = () => { lightbox.style.display = 'none'; lightboxImage.setAttribute('src', ''); }
+        lightboxCloseBtn.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', e => { if (e.target === lightbox) { closeLightbox(); } });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeLightbox(); } });
+    </script>
+
+</body>
+</html>
